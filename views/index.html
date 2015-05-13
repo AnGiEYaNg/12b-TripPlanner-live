@@ -1,0 +1,20 @@
+<body>Hotels</body>
+    <select>
+        {% for hotel in all_hotels %}
+            <option value="{{hotel.name}}">{{hotel.name}}</option>
+        {% endfor %}
+    </select>
+
+    <body>Things To Do</body>
+    <select>
+        {% for thingsToDo in all_things_to_do %}
+            <option value="{{thingsToDo.name}}">{{thingsToDo.name}}</option>
+        {% endfor %}
+    </select>
+    
+    <body>Restaurants</body>
+    <select>
+        {% for restaurants in all_restaurants %}
+            <option value="{{restaurants.name}}">{{restaurants.name}}</option>
+        {% endfor %}
+    </select>

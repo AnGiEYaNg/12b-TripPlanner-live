@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/wikistack');
+mongoose.connect('mongodb://localhost/tripplanner');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'mongodb connection error:'));
