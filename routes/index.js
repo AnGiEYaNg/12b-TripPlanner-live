@@ -4,9 +4,12 @@ var models = require('../models/index');
 var Hotel = models.Hotel;
 var Restaurant = models.Restaurant;
 var ThingToDo = models.ThingToDo;
+//var app=require('../app');
 
 
 router.get('/', function(req, res, next) {
+
+	//app.initialize_gmaps();
 
 	Hotel.find({}, function(err, hotels) {
 	    Restaurant.find({}, function(err, restaurants) {

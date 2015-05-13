@@ -1,20 +1,65 @@
-<body>Hotels</body>
-    <select>
-        {% for hotel in all_hotels %}
-            <option value="{{hotel.name}}">{{hotel.name}}</option>
-        {% endfor %}
-    </select>
+{% extends "layout.html" %}
 
-    <body>Things To Do</body>
-    <select>
-        {% for thingsToDo in all_things_to_do %}
-            <option value="{{thingsToDo.name}}">{{thingsToDo.name}}</option>
-        {% endfor %}
-    </select>
-    
-    <body>Restaurants</body>
-    <select>
-        {% for restaurants in all_restaurants %}
-            <option value="{{restaurants.name}}">{{restaurants.name}}</option>
-        {% endfor %}
-    </select>
+{% block content %}
+<div class="col-lg-8 col-md-12 ">  
+    <div id="map-canvas"  >MAP</div>
+</div>
+
+<div class="col-lg-4 col-md-12 row col-sm-12">    
+    <div class="col-lg-12 col-md-6">
+        <div class="top">
+            <p class="choices">Hotels</p>
+            <select>
+                {% for hotel in all_hotels %}
+                    <option value="{{hotel.name}}">{{hotel.name}}</option>
+                {% endfor %}
+            </select>
+            <button type="button" class="glyphicon glyphicon-triangle-right"></button>
+
+            <p class="choices">Things To Do</p>
+            <select>
+                {% for thingsToDo in all_things_to_do %}
+                    <option value="{{thingsToDo.name}}">{{thingsToDo.name}}</option>
+                {% endfor %}
+            </select>
+            <button type="button" class="glyphicon glyphicon-triangle-right"></button>
+
+            <p class="choices">Restaurants</p>
+            <select>
+                {% for restaurants in all_restaurants %}
+                    <option value="{{restaurants.name}}">{{restaurants.name}}</option>
+                {% endfor %}
+            </select>
+            <button type="button" class="glyphicon glyphicon-triangle-right"></button>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-6">
+        <div>
+            <h3>Day 1</h3>
+        </div>
+
+        <div class="med">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">+</button>
+        </div>
+        <div class="bot">
+            <p>My Hotel</p>
+                <ul>
+                    <li>to update<button type="button" class="glyphicon glyphicon-triangle-right"></button></li>
+                </ul>
+            <p>My Things To Do</p>
+                <ul>
+                    <li>to update<button type="button" class="glyphicon glyphicon-triangle-right"></button></li>
+                </ul>
+            <p>My Restaurants</p>
+                <ul>
+                    <li>to update<button type="button" class="glyphicon glyphicon-triangle-right"></button></li>
+                </ul>
+        </div>    
+    </div>    
+</div>
+{% endblock %}

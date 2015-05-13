@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./bin/www"
+    "start": "nodemon -e html,scss,js ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "async": "^0.9.0",
     "body-parser": "^1.12.4",
     "express": "^4.12.3",
+    "jquery": "^2.1.4",
     "mongoose": "^4.0.2",
     "morgan": "^1.5.3",
     "node-sass-middleware": "^0.5.0",

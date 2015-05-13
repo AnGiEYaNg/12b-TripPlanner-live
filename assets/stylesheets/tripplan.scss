@@ -1,0 +1,48 @@
+@import "normalize";
+
+body {
+	background-color: #EAD2AC;
+}
+
+.buffer {
+	margin-top: 80px;
+}
+
+.navbar-inverse {
+    background-color:#FE938C;
+}
+
+
+
+.choices {
+	margin-top:10px;
+}
+
+.top {
+	background-color:#E6B89C;
+	margin: 20px, 10px;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.med {
+	background-color:#9CAFB7;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.bot {
+	background-color:#4281A4;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+#map-canvas {
+	height: 90vh;
+}
+
+.content{
+	margin-top:50px;
+}
+
+@import "media-queries";
